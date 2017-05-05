@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Lego Art</title>
+    <link rel="stylesheet" href="css/screen.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1><a href="index.html">LEGO ART <img src="img-layout/logo.png" alt=""></a></h1>
+        <nav>
+            <ul>
+                <div class="col"><li><a href="artistes.html">Artistes</a></li></div>
+                <div class="col"><li><a href="expositions.html">Expositions</a></li></div>
+                <div class="col"><li><a href="presse.html">Presse</a></li></div>
+                <div class="col"><li><a href="contact.html">Contact</a></li></div>
+            </ul>
+        </nav>
+
+        <div class="menu-burger">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="artistes.html">Artistes</a>
+                    <a href="expositions.html">Expositions</a>
+                    <a href="presse.html">Presse</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <span class="burger" onclick="openNav()">&#9776;</span>
+        </div>
+
+    </header>
+
+    <main class="container clearfix">
+        <div class="col left" id="map"></div>
+
+        <article class="col left contact">
+            <ul>
+                <li>25 rue Roque de Fillol 92800 Puteaux</li>
+                <li>+33 (0)1 77 13 27 31</li>
+                <li>+33 (0)6 60 53 60 54</li>
+                <li>legoart@legoart.com</li>
+                <li>Ouvert mardi à vendredi 11h - 19h30 samedi 14h - 19h30</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>LEGO ART • 25 rue Roque de Fillol - 92800 Puteaux • Tél : +33 (0)1 77 13 27 31 • Mob : +33 (0)6 60 53 60 54</p>
+    </footer>
+
+<script>
+    function initMap() {
+        var uluru = {lat: 48.884497, lng: 2.242949};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDH19xUmE74-HXyWk5yJo1oEmUH8BjH9wA&callback=initMap">
+</script>
+
+</body>
+</html>

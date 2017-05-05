@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Lego Art</title>
+    <link rel="stylesheet" href="css/screen.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html">LEGO ART <img src="img-layout/logo.png" alt=""></a></h1>
+    <nav>
+        <ul>
+            <div class="col"><li><a href="artistes.html">Artistes</a></li></div>
+            <div class="col"><li><a href="expositions.html">Expositions</a></li></div>
+            <div class="col"><li><a href="presse.html">Presse</a></li></div>
+            <div class="col"><li><a href="contact.html">Contact</a></li></div>
+        </ul>
+    </nav>
+
+    <div class="menu-burger">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="artistes.html">Artistes</a>
+                <a href="expositions.html">Expositions</a>
+                <a href="presse.html">Presse</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <span class="burger" onclick="openNav()">&#9776;</span>
+    </div>
+
+</header>
+
+    <main class="container">
+        <p class="event">En ce moment</p>
+        <section class="expo row clearfix">
+            <article class="col left w100">
+                <h2>Bertrand Laffite</h2>
+                <h3>du 4 avril au 18 juin 2017</h3>
+                <img src="img-content/bertrandlaffite.jpg" alt="">
+                <p>Qui n’a jamais joué avec des LEGO ? Dans le monde entier, les petites briques de toutes les couleurs se vendent par millions. Et si des schémas vous permettent de créer des objets donnés, le plus amusant reste d’utiliser son imagination. C’est le cas des artistes ci-dessous. Ils ont réalisé des sculptures en LEGO incroyablement complexes et parfois de dimensions impressionnantes. De quoi faire rêver le grand enfant qui sommeille en nous. La galerie Lego Art accompagne, depuis 2 ans maintenant, Bertrand Laffite, jeune prodige récemment qualifié par la presse de nouvelle « relève de Turner » ou encore « d’héritier de Zao Wou-Ki ».</p>
+            </article>
+        </section>
+    </main>
+
+<footer>
+    <p>LEGO ART • 25 rue Roque de Fillol - 92800 Puteaux • Tél : +33 (0)1 77 13 27 31 • Mob : +33 (0)6 60 53 60 54</p>
+</footer>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+
+</body>
+</html>
